@@ -1,0 +1,14 @@
+History of MOT:
+In early days of computer vision, tracking was phrased as following interest points through space and time. It then got beaten by “tracking by detection” (or tracking following detection) which follows detected bounding box throughout time. The tracking stage is usually slow and complicated association strategy (Hungarian matching) by either IoU of 2D bbox or learnt embedding vectors of each object, or with motion model and EKF. The simple displacement prediction is akin to sparse optical flow. KLT (Kanade Lucas Tomasi) contains GFT (good feature to track) + LK (Lucas Kanade 金出武雄@CMU). CenterNet is like GFT and the offset vector is like LK.
+
+The first simultaneous detection and tracking paper Tracktor which predicts bbox detection and bbox offset for tracking simultaneously. CenterTrack simplifies the process further by reducing bounding box to a point with attributes.
+
+Previous joint detection and tracking work are all based on Faster RCNN two-stage framework where the tracked bbox are used as region proposals. This has two issues: 1) It assumes that the bounding box has large overlaps which is not true in low-frame rate regimes (such as in nuScenes) 2) it is hard to run MOT in real time.
+
+It feeds detection results from previous frame as additional input to boost performance in the current frame. This tracking-conditioned detection is like autoregressive models. This trick is also used in ROLO. This provides a temporally coherent set of detection objects. (Only location, not size).
+
+zhihu summary:
+https://zhuanlan.zhihu.com/p/125395219
+因此无论输入发生了平移、尺度等什么变换，只要其属性没变，全连接网络更能捕捉其中的不变性。而对于卷积神经网络，我们都知道两个特点：局部连接和权值共享。
+
+对于局部连接，因为全连接参数太多，容易造成过拟合，并且图像领域更多地关注局部细节信息，所以局部连接方式有效。至于权值共享，也有减少参数的作用，很像图像处理中的滤波器。我们早期对于其不变性的理解更多是遵循一个宏观的感受，即由于卷积核的移位滤波，上一层的特征到下一层的特征相对位置宏观不变，直到最后输出，类似于全连接的效果，从而获得不变性。
