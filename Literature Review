@@ -1,4 +1,4 @@
-History of MOT:
+#History of MOT:
 In early days of computer vision, tracking was phrased as following interest points through space and time. It then got beaten by “tracking by detection” (or tracking following detection) which follows detected bounding box throughout time. The tracking stage is usually slow and complicated association strategy (Hungarian matching) by either IoU of 2D bbox or learnt embedding vectors of each object, or with motion model and EKF. The simple displacement prediction is akin to sparse optical flow. KLT (Kanade Lucas Tomasi) contains GFT (good feature to track) + LK (Lucas Kanade 金出武雄@CMU). CenterNet is like GFT and the offset vector is like LK.
 
 The first simultaneous detection and tracking paper Tracktor which predicts bbox detection and bbox offset for tracking simultaneously. CenterTrack simplifies the process further by reducing bounding box to a point with attributes.
