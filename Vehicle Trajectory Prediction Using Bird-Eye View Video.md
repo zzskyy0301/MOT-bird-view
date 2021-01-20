@@ -1,8 +1,6 @@
 # Vehicle Trajectory Prediction Using Bird-Eye View Video
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 Objectives:
 
@@ -32,6 +30,12 @@ Objectives:
   - UAVDT Dataset: Videos taken by UAV(Unmanned Aerial Vehicles)
   - 80; 000 represen-tative frames are fully annotated with bounding boxes as well as up to 14 kinds of attributes
   ![UAVDT](https://github.com/zzskyy0301/MOT-bird-view/blob/main/UAVDT.png)
+  
+  
+  
+  
+  
+  
 
 You can also:
   - Import and save files from GitHub, Dropbox, Google Drive and One Drive
