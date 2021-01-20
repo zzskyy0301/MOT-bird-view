@@ -10,7 +10,7 @@ Objectives:
  
 # The MOT Part
 ## CenterTrack Model (2020)[paper](https://arxiv.org/abs/2004.01177)
-  - Contribution: Simultaneous detection and tracking -->simpler,faster, more accurate
+  - Contribution: Simultaneous detection and tracking,anchor-free -->simpler,faster, more accurate
   - Idea: Track objects as points
   - ![CenterTrack](https://github.com/zzskyy0301/MOT-bird-view/blob/main/centertrack.png)
   
