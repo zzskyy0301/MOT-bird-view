@@ -1,10 +1,10 @@
 # Vehicle Trajectory Prediction Using Bird-Eye View Video
 
-
+![PHOTO](https://www.bing.com/images/search?view=detailV2&ccid=pCI1099b&id=E1369CC955D7A2B8718A783B0CBE98111BDF0CDB&thid=OIP.pCI1099btHs5Edgk7JxYagHaFg&mediaurl=https%3a%2f%2fc8.alamy.com%2fcomp%2fER4KXT%2faerial-view-of-city-street-intersection-philadelphia-usa-ER4KXT.jpg&exph=968&expw=1300&q=Road+Intersection+View&simid=608030931476284074&ck=938EDA7665C964F53EE036532F604BAB&selectedIndex=6&FORM=IRPRST&ajaxhist=0)
 
 Objectives:
 
-  - Develop a **MOT(Multi Object Tracking) + Prediction** model to perform trajectory prediction for vehicles
+  - Develop a **MOT(Multi Object Tracking) + Prediction** model to perform trajectory prediction for vehicles using bird-eye presentations
   - Improve CenterTrack Model for better MOT
   - Justify the advantages of applying bird-eye view video in vehicle trajectory prediction
  
