@@ -4,8 +4,8 @@
 
 Objectives:
 
-  - Develop a **MOT(Multi Object Tracking) + Prediction** model to perform trajectory prediction for vehicles using bird-eye presentations
   - Improve CenterTrack Model for better MOT
+  - Develop a **MOT(Multi Object Tracking) + Prediction** model to perform trajectory prediction for vehicles using bird-eye presentations
   - Justify the advantages of applying bird-eye view video in vehicle trajectory prediction
  
 # The MOT Part
