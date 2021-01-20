@@ -12,12 +12,14 @@ Objectives:
 ## CenterTrack Model (2020)[paper](https://arxiv.org/abs/2004.01177)
   - Contribution: Simultaneous detection and tracking,anchor-free -->simpler,faster, more accurate
   - Idea: Track objects as points
-  - ![CenterTrack](https://github.com/zzskyy0301/MOT-bird-view/blob/main/centertrack.png)
+   ![CenterTrack](https://github.com/zzskyy0301/MOT-bird-view/blob/main/centertrack.png)
+  
   
 # Improvement to CenterTrack
 
   - CenterTrack Drawbacks: use center of bbox as ground truth --> Simple but may be not accurate, especially when traffic density
-  - Improvement: More accurate detection of center points of vehicles 
+  ![centernet](https://github.com/zzskyy0301/MOT-bird-view/blob/main/Screen%20Shot%202021-01-20%20at%2010.47.15%20AM.png)
+  - Improvement: Can we do more accurate detection of central points?
   - Methods: Probably by applying in FPN model? (ref: [JDE](https://arxiv.org/pdf/1909.12605v1.pdf),[FPN](https://towardsdatascience.com/review-fpn-feature-pyramid-network-object-detection-262fc7482610))
   ![FPN](https://github.com/zzskyy0301/MOT-bird-view/blob/main/Screen%20Shot%202021-01-20%20at%209.49.40%20AM.png)
 
