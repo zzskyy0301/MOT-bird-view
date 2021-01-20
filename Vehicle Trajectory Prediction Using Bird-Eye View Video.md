@@ -7,7 +7,7 @@ Objectives:
   - Develop a **MOT(Multi Object Tracking) + Prediction** model to perform trajectory prediction for vehicles
   - Improve CenterTrack Model for better MOT
   - Justify the advantages of applying bird-eye view video in vehicle trajectory prediction
-  - 
+ 
 # The MOT Part
 ## CenterTrack Model (2020)[paper](https://arxiv.org/abs/2004.01177)
   - Contribution: Simultaneous detection and tracking -->simpler,faster, more accurate
