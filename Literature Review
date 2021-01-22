@@ -17,3 +17,9 @@ https://zhuanlan.zhihu.com/p/125395219
 DE——先从原图中检测一系列包含目标的框，再把这些框送入re-ID model，分配ID和轨迹
 Two-Stage——从原图中找到一些列ROI的feature，再给这些ROI作bbox回归、分配ID和轨迹
 JDE——从原图中直接输出检测框，以及这些框的ID和轨迹
+
+1.21
+#[TNT: Target-driveN Trajectory Prediction](https://arxiv.org/pdf/2008.08294.pdf)
+#[Deep Learning-based Vehicle Behaviour Prediction For Autonomous Driving Applications: A Review](https://arxiv.org/pdf/1912.11676.pdf)
+#[online vehicle trajectory prediction,HKUST](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8793568&casa_token=U8-Lc3JMQbQAAAAA:akIQrQQwO79i0gLL6pKk2w91H70NCQCpj864s-YAvgjZVAA1suViFASQsMt4BPmBTqRTF0PLKQ&tag=1)
+
