@@ -32,15 +32,25 @@ dedicated short-range communication interface to better support vehicle-to-vehic
 
   
 # Review
-- no pipelines from videos to predictions
-- MOT+LSTM
-# Method
+## vehile trajectory prediction problem: 
+inputs:
+outputs:
+methods:
+
+## Challenges remained:
+- drone videos to 
+- detection accuary is a large prob
+# Objectives
+- model fom video to prediction
+
+# Impacts
+- UAV advantages
+- The vision-based tracking and predicting model
+
+# Method (Next Steps)
 -  MOT task + prediction
 -  CenterTrack + LSTM
-# Impacts
-- UAV advantaves
-- The vision-based tracking and predicting model
-# The Tracking  Part
+# The dataset (Next Steps)
 ## LSTM model
 - to be added...:)
  
