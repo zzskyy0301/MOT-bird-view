@@ -16,7 +16,12 @@ UAVs has facilitated the accurate extraction of vehicle trajectories so that ana
 (1)Firstly, Since UAV cameras are able to capture videos at wider view angle than fixed cameras, leading to large object number, more information regarding physical structure. If we compare the two figures here, the left is from a traditional camera with fixed tilted angle and the right one is from UAV. The traditional view only provides infomation from limited front view whild UAV could provide a much broader view.
 (2) Secondly, UAVs are flexible to install and move.
 Therefore, studies in how to utilize the data from UAV to facilitate the vehicle trajectory prediction would be helpful. 
-
+## review on current work
+- Therefore, using UAV for traj prediction would be beneficial.
+- however, if we look at current work, the application of UAV video in traj pred is limites. below is a summary of inputs of traj problems. 
+- for bird eye view, simple, not real data
+- therefore, using real data would fill the gap.
+## 写paper用的资料
 - Association for unmanned vehicle systems international (AUVSI) economic report forecasted
 that in the US alone by 2025 more than 100,000 jobs will be created with an economic impact of $82 billion in the commercial drone’s
 market (Jenkins and Vasigh, 2013). 7 million small UAVs are already deployed in air space for commercial use in various domains
@@ -32,9 +37,23 @@ undergo so that appropriate trajectory of vehicles is obtained.
 -  UAV based ITS, can be utilised for a
 dedicated short-range communication interface to better support vehicle-to-vehicle (V2V) and vehicle to infrastructure (V2X) communications
 - application of UAVs in three major domains of transportation, namely; road safety, traffic monitoring and highway infrastructure management
-
+## objectives
+- to summary, the objectives of this project are 
   
-# Review
+# metohds
+## Challenges remained:
+- apart from reviewing trajectory prediction models, I also had a look at special problems from UAV videos.
+- First of all, Objects are usually small due to high altitude of UAV views, resulting in difficulties to detect and track them
+- Secondly, positions of UAV may be affected by wind. videos need to be stablized before processing.
+- Thirdly, algorithms need to be fast for practical application
+These challenges would be paied with particular attention in future steps.
+
+# methods
+- The project would be combined by two parts; MOT & prediction.
+- for the MOT part, current algorithms fall into two parts.
+- for the prediction parts, a review is summarized here.
+I am still doing review on this part and will probably decide which model to use in next few weeks.
+
 ## vehile trajectory prediction problem: 
 - inputs:the inputs of trajectory prediction problem 
 - outputs: 
@@ -44,16 +63,6 @@ specifically defined for a single driving scenario.
 3) Multimodel: the model predict several possible trajectories associated with probabilities. The figure is an example. However, it usually has high computationally cost, which is unfriendly for realtime application.
 4) occupancy map: people need to assigning a grid map to a bird’s eye view presentation.  the occupancy of each cell in a  map of the driving environment is estimated for future time. The drawback of such approaches is that their prediction accuracy is limited by the size of the cells in the map.
 In this project, I would like to use unimodel output due to its accuary and efficiency.
-
-## Challenges remained:
-- apart from reviewing trajectory prediction models, I also had a look at special problems from UAV videos.
-- First of all, Objects are usually small due to high altitude of UAV views, resulting in difficulties to detect and track them
-- Secondly, positions of UAV may be affected by wind. videos need to be stablized before processing.
-- Thirdly, algorithms need to be fast for practical application
-These challenges would be paied with particular attention in future steps.
-
-# methods
-The project would be combined by two parts; MOT & prediction.I am still doing review on this part and will probably decide which model to use in next few weeks.
 
 # Impacts
 - UAV advantages
