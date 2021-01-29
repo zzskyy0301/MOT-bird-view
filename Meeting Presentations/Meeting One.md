@@ -5,7 +5,7 @@ slow! peace!No worry!Mistakes are ok!
 # motivation 
 ## Trajectory Pred
 
-  - 演讲稿: First of all, Predicting future trajectories of surronding vehicles is a crucial task for AV.In order to safely and efficiently navigate through complex traffic comprised by human drivers, an autonomous vehicle needs to have plan its path based on prediction of movement of other vehicles. For instance, in the figure below, the blue vehicle is trying to do a left turn while the yellow vehicle intend to drive strightly. A crash would occur is the blue veh plans its path without knowing the intention of the yellow vehicle.
+  - 演讲稿: First of all, In order to safely and efficiently navigate through complex traffic comprised by human drivers, an autonomous vehicle needs to have plan its path based on prediction of movement of other vehicles. For instance, in the figure below, the blue vehicle is trying to do a left turn while the yellow vehicle intend to drive strightly. A crash would occur is the blue veh plans its path without knowing the intention of the yellow vehicle. therefore,Predicting future trajectories of surronding vehicles is a crucial task for AV.
   - 备用：In order to safely and efficiently navigate through complex traffic comprised by human drivers, an autonomous vehicle needs to have the ability to take initiative, such as deciding when to change lanes, overtake another vehicle, or slowing down to allow other vehicles to merge. This requires the autonomous vehicle to have some ability to reason about the future motion of surrounding vehicles.
   -  existing tactical path planning algorithms[17, 22, 24] depend on reliable estimation of future trajectories of surrounding vehicles
   -  predict how this situation will evolve in the future()
@@ -18,9 +18,15 @@ UAVs has facilitated the accurate extraction of vehicle trajectories so that ana
 Therefore, studies in how to utilize the data from UAV to facilitate the vehicle trajectory prediction would be helpful. 
 ## review on current work
 - Therefore, using UAV for traj prediction would be beneficial.
-- however, if we look at current work, the application of UAV video in traj pred is limites. below is a summary of inputs of traj problems. 
-- for bird eye view, simple, not real data
-- therefore, using real data would fill the gap.
+- however, if we look at current work,there are some gaps to fill.
+- The research on using UAV to do vehicle trajectory has been studied for some time. But most of them stops after extracting information. 
+- There are some emerging models these years. we can use it in UAV data processing, which potentially would Improve performance  of obj tracking.
+- the application of UAV video in traj pred is limited. below is a summary of inputs of traj problems. 
+- Most use trajectory histories. THE HISTORY MAY BE FROM VIDEO. but using data already extracted before means this type of algorithm would never reach the application level.
+- For bird eye view, simple, not real data. They have demonstrated that BEV is good at considering nearby environment and comply with limited observation from on-vehicle sensors. But the BEV used is not from UAV.
+- therefore, using real data would fill the gap.This would bring the application of UAV a step forward to applications.
+
+## potential
 ## 写paper用的资料
 - Association for unmanned vehicle systems international (AUVSI) economic report forecasted
 that in the US alone by 2025 more than 100,000 jobs will be created with an economic impact of $82 billion in the commercial drone’s
@@ -52,6 +58,7 @@ These challenges would be paied with particular attention in future steps.
 - The project would be combined by two parts; MOT & prediction.
 - for the MOT part, current algorithms fall into two parts.
 - for the prediction parts, a review is summarized here.
+
 I am still doing review on this part and will probably decide which model to use in next few weeks.
 
 ## vehile trajectory prediction problem: 
